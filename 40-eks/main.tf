@@ -64,7 +64,7 @@
 
 resource "aws_key_pair" "eks" {
   key_name   = "eks"
-  public_key = file("C:\\devops\\daws-82s\\dev.pub")
+  public_key ="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKeOgIP0y0907gBZfaRLkvkKGqyfJ60OboasCoLvI0iU Malini@Malini"
 }
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
